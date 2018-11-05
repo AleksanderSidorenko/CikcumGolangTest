@@ -47,7 +47,7 @@ func main() {
 			panic (err)
 		}
 
-		url := "persistence:9000/persist"
+		url := "localhost:9000/persist"
 	
 		req, err := http.NewRequest("POST", url, bytes.NewBuffer(json))
 		req.Header.Set("Content-Type", "application/json")
